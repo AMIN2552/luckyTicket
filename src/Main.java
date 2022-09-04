@@ -7,18 +7,13 @@ public class Main {
         int x = sc.nextInt();
 
         int a = x / 100000;
-
-        int b = x / 10000;
-        b = b % 10;
-        int c = x / 1000;
-        c = c % 10;
+        int b = (x / 10000) % 10;
+        int c = (x / 1000) % 10;
 
         int sum1 = a + b +c;
 
-        int d = x / 100;
-        d = d % 10;
-        int e = x / 10;
-        e = e % 10;
+        int d = (x / 100) % 10;
+        int e = (x / 10) % 10;
         int f = x % 10;
 
         int sum2 = d + e + f;
